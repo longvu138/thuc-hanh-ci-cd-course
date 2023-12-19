@@ -1,22 +1,22 @@
-name: Hello Workflows
-on:
-  push:
-    branches:
-      - feat/ci-cd
-      - master
-jobs:
-  hello:
-    runs-on: ubuntu-latest
-    steps:
-      - name: setup node version 14
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-      - name: check node
-        run: node -v
-      - name: before checkout
-        run: ls
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: after checkout
-        run: ls
+# name: Hello Workflows
+# on:
+#   push:
+#     branches:
+#       - feat/ci-cd
+#       - master
+# jobs:
+#   hello:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: setup node version 14
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: 14
+#       - name: check node
+#         run: node -v
+#       - name: before checkout
+#         run: ls
+#       - name: checkout
+#         uses: actions/checkout@v3
+#       - name: after checkout
+#         run: ls

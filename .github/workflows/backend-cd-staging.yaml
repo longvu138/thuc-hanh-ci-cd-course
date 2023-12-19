@@ -2,7 +2,8 @@ name: BE deploy staging
 run-name: BE deploy staging
 on:
   push:
-    - "master"
+    branches:
+      - master
   paths:
     - backend/**
 defaults:
