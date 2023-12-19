@@ -1,0 +1,19 @@
+name: BE deploy staging
+run-name: BE deploy staging
+on:
+  push:
+    - "master"
+  paths:
+    - backend/**
+defaults:
+  run:
+    working-directory: /backend
+jobs:
+  build:
+    runs-on: [self-hosted, backend-server-stagging]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - run: |
+          ls
+          echo 'build'
