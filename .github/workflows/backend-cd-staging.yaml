@@ -13,8 +13,6 @@ jobs:
   build:
     runs-on: [self-hosted, backend-server-stagging]
     steps:
-      - name: before checkout
-        run: ls
       - name: Checkout
         uses: actions/checkout@v4
       - run: |
