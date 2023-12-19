@@ -1,0 +1,10 @@
+name: Hello Workflows
+on:
+  push:
+    branches: feat/ci-cd
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step hi
+      - run: echo "hello world"
