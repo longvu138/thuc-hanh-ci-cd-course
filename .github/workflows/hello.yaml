@@ -19,4 +19,4 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: after checkout
-        uses: ls
+        run: ls
