@@ -14,3 +14,9 @@ jobs:
           node-version: 14
       - name: check node
         run: node -v
+      - name: before checkout
+        run: ls
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: after checkout
+        uses: ls
